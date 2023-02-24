@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confront</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-body text-black font-inter pb-6">
+
+    <header class="pt-2 sm:pt-6 md:pt-12">
+        <nav class=" flex justify-between mx-auto px-2">
+            <h1>
+            <a class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl px-2 italic" href="index.html">Confront</a>
+            </h1> 
+
+            <h2 class="flex justify-between gap-0 sm:gap-x-12 ">
+            <a class="cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl  px-2" href="About.html">About</a>
+            <button id="copy-text-btn" class="cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl  px-2" href="s.davinomar@gmail.com">Contact</button>
+    
+         <p id="copy-text" class="hidden">s.davinomar@gmail.com</p>
+    
+            </h2> 
+        </nav>    
+    </header>
+
+        <section class="py-4 sm:py-12 md:py-18 justify-between items-center mx-auto px-2">
+            <ul class="px-2">
+
+                <li class="py-2">
+                    <a class=" cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl" href="Out of Control When I Turn My Power On.html">Out of Control When I Turn My Power On</a>
+                </li>
+
+                <li class="py-2">
+                    <a class=" cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl" href="Portes Ouvertes.html">Portes Ouvertes</a>
+                </li>
+
+                <li class="py-2">
+                    <a class="cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl" href="An Autonomous....html">An Autonomous Form For the Labour of Love</a>
+                </li>
+
+                <li class="py-2">
+                    <a class="cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl" href="Communal Tower.html">Communal Tower</a>
+                </li>
+                
+                <li class="py-2">
+                    
+                    <a class="cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl" href="Brutus.html">Brutus</a>
+                </li>
+
+                <li class="py-2">
+                    <a class="cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl" href="Off the Grid.html">Off the Grid</a>
+                </li>
+                
+                <li class="py-2">
+                    <a class="cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl" href="Staketet.html">Staketet</a>
+                </li>
+            </ul>
+
+
+        </section>
+
+
+   <script>
+ document.getElementById('copy-text-btn').onclick = function() {
+	const _this = this 
+	navigator.clipboard.writeText(document.getElementById('copy-text').innerText) 
+
+	.then (function(){
+
+		let toast = document.querySelector('.toast')
+		toast = document.getElementById ('toast') 
+		_this.innerText = ('Email copied')
+		
+	setTimeout(function(){
+		_this.innerText = 'Contact'
+	},1500)
+	
+
+})}
+</script>
+
+</body>
+</html>
+
+
+
+
